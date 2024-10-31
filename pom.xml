@@ -75,6 +75,18 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.14</version>
             <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.atlassian.bamboo</groupId>
