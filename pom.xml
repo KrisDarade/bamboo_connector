@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.miniorange.bamboo.crowd</groupId>
     <artifactId>bamboo-crowd-sso</artifactId>
-    <version>1.0.12</version>
+    <version>1.0.11</version>
 
     <organization>
         <name>miniOrange</name>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.14</version>
+            <version>4.5.13</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -85,7 +85,7 @@
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.15</version>
+            <version>1.13</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
