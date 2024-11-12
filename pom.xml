@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.miniorange.bamboo.crowd</groupId>
     <artifactId>bamboo-crowd-sso</artifactId>
-    <version>1.0.12</version>
+    <version>1.0.11</version>
 
     <organization>
         <name>miniOrange</name>
@@ -28,7 +28,7 @@
         <bamboo.version>6.6.0</bamboo.version>
         <bamboo.data.version>6.6.0</bamboo.data.version>
         <amps.version>6.3.21</amps.version>
-        <plugin.testrunner.version>2.0.9</plugin.testrunner.version>
+        <plugin.testrunner.version>1.2.3</plugin.testrunner.version>
 <!--        temp fix to resolve spring-scanner issue-->
         
 <!--        <atlassian.spring.scanner.version>1.2.13</atlassian.spring.scanner.version>-->
@@ -73,7 +73,19 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.14</version>
+            <version>4.5.13</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
